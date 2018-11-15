@@ -22,22 +22,19 @@
 2. **Install Ruby dependencies**. run bundle install.
     ```bash
     bundle install
+    gem install foreman
     ```
 3. **Install JavaScript dependencies**. Webpack is needed in this app
     ```bash
     yarn install
     ```
-4. **Run webpack server**. Run these commands in a terminal separate from `bundle exec rails s`
-    ```bash
-    ./bin/webpack-dev-server
-    ```
-5. **Set Up Database**
+4. **Set Up Database**
     ```bash
     rake db:setup
     ```
 5. **Start the application**. Start this rails app
     ```bash
-    bundle exec rails s
+    foreman start -f Procfile.dev -p 3000
     ```
 
 ## Using Docker for development

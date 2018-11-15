@@ -1,1 +1,33 @@
-coming soon
+version: '3'
+services:
+  web:
+    build: .
+    image: rails_base:2.5.3-slim-stretch
+    command: foreman start -f Procfile.dev.docker
+    depends_on:
+      - apps-rdev-server
+    volumes:
+      - $PWD/app
+      - node_modules:/app/node_modules
+    ports:
+      - "3035:3035"
+      - "3000:3000"
+    environment:
+      - DB_HOST=apps-rdev-server
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+  apps-rdev-server:
+    image: postgres:9.4
+    volumes:
+      - test_metrics_dashboard_db_data:/var/lib/postgresql/data
+    ports:
+      - 5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+volumes:
+  apps-rdev_db_data:
+    external: false
+  node_modules:
+    external: false
