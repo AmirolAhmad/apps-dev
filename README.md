@@ -1,4 +1,4 @@
-# APPS rdev.my
+# APPS rdev.my [![Build Status](https://travis-ci.org/AmirolAhmad/apps-dev.svg?branch=master)](https://travis-ci.org/AmirolAhmad/apps-dev)
 
 - [Application Environment](#application-environment)
 - [Setting up development environment](#setting-up-development-environment)
