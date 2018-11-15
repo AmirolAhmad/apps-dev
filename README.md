@@ -10,7 +10,7 @@
 - `Rails 5.2.1`
 - `Webpack 3.5.5`
 - Test Coverage
-  - `Rspec` - [#72](https://code.in.spdigital.io/sp-digital/rails-base/pull/72)
+  - `Rspec`
 
 ## Setting up development environment
 
