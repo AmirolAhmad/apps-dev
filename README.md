@@ -48,23 +48,23 @@ Another option for building applications via docker. To use it:
 
 2. Run this command in your application root folder:
 
-```bash
-docker-compose up
-```
-This will run the rails server on port 3000 with postgres running on port 5432. Any changes to the source code will
-get reflected in the containers that are running.
+    ```bash
+    docker-compose up
+    ```
+    This will run the rails server on port 3000 with postgres running on port 5432. Any changes to the source code will
+    get reflected in the containers that are running.
 
 3. To stop the services:
 
-```bash
-docker-compose down
-```
-This will remove all created containers. To remove the database data, you can use `docker-compose down -v` to remove
-the mounted volume.
+    ```bash
+    docker-compose down
+    ```
+    This will remove all created containers. To remove the database data, you can use `docker-compose down -v` to remove
+    the mounted volume.
 
 4. Rebuild the docker
 
-```bash
-docker-compose build
-```
-This will rebuild all the dependencies installed in this created containers.
+    ```bash
+    docker-compose build
+    ```
+    This will rebuild all the dependencies installed in this created containers.
