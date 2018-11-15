@@ -17,7 +17,7 @@
 1. **Clone repository**. Clone project
     ```bash
     git clone https://github.com/amirolahmad/apps-rdev.git
-    cd my-project-name
+    cd apps-rdev
     ```
 2. **Install Ruby dependencies**. run bundle install.
     ```bash
