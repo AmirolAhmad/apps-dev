@@ -26,6 +26,7 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 
 RUN gem install bundler
+RUN gem install foreman
 
 COPY Gemfile $APP_HOME/Gemfile
 COPY Gemfile.lock $APP_HOME/Gemfile.lock
