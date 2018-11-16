@@ -65,3 +65,11 @@ Another option for building applications via docker. To use it:
     docker-compose build
     ```
     This will rebuild all the dependencies installed in this created containers.
+
+## Contact
+
+Comments and feedback are welcome. Send a message to me via the [Facebook Messenger](http://m.me/amirolahmad)
+
+## License
+
+This code is free to use under the terms of the MIT license.
