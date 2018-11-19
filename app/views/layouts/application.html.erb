@@ -16,7 +16,9 @@
   <body>
     <%= render 'alert' %>
     <%= render 'header' %>
-    <%= yield %>
+    <main role="main">
+      <%= yield %>
+    </main>
     <%= render 'footer' %>
   </body>
 </html>
