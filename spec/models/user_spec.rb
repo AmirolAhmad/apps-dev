@@ -4,9 +4,6 @@ RSpec.describe User, type: :model do
   it "has a valid user factory" do
     expect(FactoryBot.build(:user)).to be_valid
   end
-  it "has a valid admin factory" do
-    expect(FactoryBot.build(:admin)).to be_valid
-  end
 
   describe 'validation' do
     it { expect(FactoryBot.build(:user, username: nil)).not_to be_valid }

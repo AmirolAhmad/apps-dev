@@ -12,6 +12,11 @@
             <li><a href="#" class="text-white">Follow on Twitter</a></li>
             <li><a href="#" class="text-white">Like on Facebook</a></li>
             <li><a href="#" class="text-white">Email me</a></li>
+            <% if user_signed_in? %>
+                <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "text-white", data: { turbolinks: false } %></li>
+            <% else %>
+                <li><%= link_to "Sign in", login_path, class: "text-white" %></li>
+            <% end%>
             </ul>
         </div>
         </div>

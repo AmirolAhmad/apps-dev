@@ -7,15 +7,18 @@ FactoryBot.define do
     confirmed_at { Date.today }
     confirmation_sent_at { Date.today }
     role {0}
-  end
 
-  factory :admin, class: User do
-    username { Faker::Internet.user_name }
-    email { Faker::Internet.email }
-    password {'admin123'}
-    password_confirmation {'admin123'}
-    confirmed_at { Date.today }
-    confirmation_sent_at { Date.today }
-    role {1}
+    trait :with_admin do
+      after(:create) do |user|
+        user.role(:admin)
+      end
+    end
+
+    trait :confirmed do
+      after(:create) do |user|
+        user.confirm
+      end
+    end
+    
   end
 end
