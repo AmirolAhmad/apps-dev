@@ -226,10 +226,26 @@ ms:
           has_one: "Rekod tidak boleh dihapuskan kerana masih mempunyai tanggungan %{record}"
           has_many: "Rekod tidak boleh dihapuskan kerana masih mempunyai tanggungan %{record}"
         not_found: "%{model} telah ditemui."
-  models:
-    user: "Pengguna"
-  attributes:
-    user:
-      username: "Nama pengguna"
-      password: "Kata Laluan"
-      password_confirmation: "Konformasi kata laluan"
+    models:
+      user: "Pengguna"
+    attributes:
+      user:
+        login: "Nama pengguna/alamat emel"
+        username: "Nama pengguna"
+        password: "Kata Laluan"
+        password_confirmation: "Konformasi kata laluan"
+        remember_me: "Ingat saya"
+  users:
+    sessions:
+      new:
+        log_in: "Daftar masuk"
+    registrations:
+      new:
+        sign_up: "Daftar akaun"
+    passwords:
+      new:
+        forgot: "Lupa kata laluan?"
+        instructions: "Hantar saya cara tetapan semula"
+    confirmations:
+      new:
+        instructions: "Hantar semula arahan pengesahan"

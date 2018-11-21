@@ -226,11 +226,27 @@ en:
           has_one: "Cannot delete record because a dependent %{record} exists"
           has_many: "Cannot delete record because dependent %{record} exist"
         not_found: "%{model} not found."
-  models:
-    user: "User"
-  attributes:
-    user:
-      username: "Username"
-      password: "Password"
-      password_confirmation: "Password Confirmation"
+    models:
+      user: "User"
+    attributes:
+      user:
+        login: "Username/Email address"
+        username: "Username"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+        remember_me: "Remember me"
+  users:
+    sessions:
+      new:
+        log_in: "Login"
+    registrations:
+      new:
+        sign_up: "Register akaun"
+    passwords:
+      new:
+        forgot: "Forgot your password?"
+        instructions: "Send me reset password instructions"
+    confirmations:
+      new:
+        instructions: "Resend confirmation instructions"
 
