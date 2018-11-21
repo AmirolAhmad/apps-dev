@@ -1,0 +1,62 @@
+ms:
+  devise:
+    confirmations:
+      confirmed: "Alamat e-mel anda telah berjaya disahkan."
+      send_instructions: "Anda akan menerima e-mel dengan arahan tentang cara untuk mengesahkan alamat e-mel anda dalam beberapa minit."
+      send_paranoid_instructions: "Jika alamat e-mel anda terdapat dalam pengkalan data kami, anda akan menerima e-mel dengan arahan tentang cara untuk mengesahkan alamat e-mel anda dalam beberapa minit."
+    failure:
+      already_authenticated: "Anda telah log masuk."
+      inactive: "Akaun anda masih belum diaktifkan."
+      invalid: "%{authentication_keys} atau kata laluan anda tidak sah."
+      locked: "Akaun anda dikunci."
+      last_attempt: "Anda mempunyai satu lagi percubaan sebelum akaun anda dikunci."
+      not_found_in_database: "%{authentication_keys} atau kata laluan anda tidak sah."
+      timeout: "Sesi anda telah tamat. Sila log masuk sekali lagi untuk meneruskan."
+      unauthenticated: "Anda perlu log masuk atau mendaftar sebelum meneruskan."
+      unconfirmed: "Anda perlu mengesahkan alamat e-mel anda sebelum meneruskan."
+    mailer:
+      confirmation_instructions:
+        subject: "Arahan pengesahan"
+      reset_password_instructions:
+        subject: "Arahan tetapan semula kata laluan"
+      unlock_instructions:
+        subject: "Arahan membuka kunci"
+      email_changed:
+        subject: "E-mel telah berubah"
+      password_change:
+        subject: "Kata laluan telah berubah"
+    omniauth_callbacks:
+      failure: "Tidak dapat mengesahkan dari %{kind} kerana \"%{reason}\"."
+      success: "Akaun berjaya disahkan dari %{kind}."
+    passwords:
+      no_token: "Anda tidak boleh mengakses halaman ini tanpa melalui e-mel set semula kata laluan. Jika anda datang dari e-mel set semula kata laluan, sila pastikan anda menggunakan URL penuh yang diperuntukkan."
+      send_instructions: "Anda akan menerima e-mel dengan arahan mengenai cara untuk menetapkan semula kata laluan anda dalam beberapa minit."
+      send_paranoid_instructions: "Jika alamat e-mel anda wujud dalam pengkalan data kami, anda akan menerima pautan set semula kata laluan di alamat e-mel anda dalam beberapa minit."
+      updated: "Kata laluan anda telah berjaya ditukar. Anda kini dilog masuk."
+      updated_not_active: "Kata laluan anda telah berjaya diubah."
+    registrations:
+      destroyed: "Bye! Akaun anda telah berjaya dimusnahkan. Kami berharap dapat melihat anda semula dimasa hadapan."
+      signed_up: "Selamat datang! Anda telah berjaya mendaftar."
+      signed_up_but_inactive: "Anda telah berjaya mendaftar. Walau bagaimanapun, kita tidak boleh log masuk anda kerana akaun anda masih belum aktif."
+      signed_up_but_locked: "Anda telah berjaya mendaftar. Walau bagaimanapun, kita tidak boleh log masuk anda kerana akaun anda telah dikunci."
+      signed_up_but_unconfirmed: "Mesej dengan pautan pengesahan telah dihantar ke alamat e-mel anda. Sila ikuti arahan untuk mengaktifkan akaun anda."
+      update_needs_confirmation: "Anda telah berjaya mengemaskini akaun anda, tetapi kami perlu mengesahkan alamat e-mel baru anda. Sila semak e-mel anda dan ikut pautan untuk mengesahkan alamat e-mel baru anda."
+      updated: "Akaun anda telah berjaya dikemaskini."
+    sessions:
+      signed_in: "Log masuk berjaya."
+      signed_out: "Log keluar berjaya."
+      already_signed_out: "Telah berjaya log keluar."
+    unlocks:
+      send_instructions: "Anda akan menerima e-mel dengan arahan tentang cara untuk membuka akaun anda dalam beberapa minit."
+      send_paranoid_instructions: "Jika akaun anda telah wujud, anda akan menerima e-mel dengan arahan tentang cara untuk membuka kuncinya dalam beberapa minit."
+      unlocked: "Akaun anda telah dibuka dengan jayanya. Sila log masuk untuk meneruskan."
+  errors:
+    messages:
+      already_confirmed: "sudah disahkan, sila cuba log masuk"
+      confirmation_period_expired: "perlu disahkan dalam masa %{period}, sila minta yang baru"
+      expired: "telah tamat, sila minta yang baru"
+      not_found: "tidak ditemui"
+      not_locked: "tidak dikunci"
+      not_saved:
+        one: "1 kesilapan telah dilarang di %{resource} ini daripada disimpan:"
+        other: "%{count} kesilapan telah dilarang di %{resource} ini daripada disimpan:"
