@@ -15,12 +15,12 @@
             
                 <ul class="nav nav-main">
                     <li>
-                        <a class="nav-link" href="layouts-default.html">
+                        <%= link_to dashboard_path, class: "nav-link", data: { turbolinks: false } do %>
                             <i class="fas fa-home" aria-hidden="true"></i>
-                            <span>Dashboard</span>
-                        </a>                        
+                            <span><%= t('.dashboard') %></span>
+                        <% end %>                
                     </li>
-                    <li class="nav-parent nav-expanded nav-active">
+                    <li class="nav-parent">
                         <a class="nav-link" href="#">
                             <i class="fas fa-columns" aria-hidden="true"></i>
                             <span>Layouts</span>
@@ -630,7 +630,7 @@
 
             <hr class="separator" />
 
-            <div class="sidebar-widget widget-tasks">
+            <div class="sidebar-widget widget-tasks widget-collapsed">
                 <div class="widget-header">
                     <h6>Projects</h6>
                     <div class="widget-toggle">+</div>
@@ -646,7 +646,7 @@
 
             <hr class="separator" />
 
-            <div class="sidebar-widget widget-stats">
+            <div class="sidebar-widget widget-stats widget-collapsed">
                 <div class="widget-header">
                     <h6>Company Stats</h6>
                     <div class="widget-toggle">+</div>

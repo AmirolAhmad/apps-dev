@@ -2,6 +2,12 @@ en:
   errors_prohibited_this_record_from_being_saved:
     one: "1 error prohibited this record from being saved"
     other: "%{count} errors prohibited this record from being saved"
+  admin:
+    header:
+      sign_out: "Logout"
+      settings: "Account Settings"
+    sidebar:
+      dashboard: "Dashboard"
   application:
     header:
       about: "About"
@@ -232,8 +238,10 @@ en:
       user:
         login: "Username/Email address"
         username: "Username"
+        email: "Email address"
         password: "Password"
         password_confirmation: "Password Confirmation"
+        current_password: "Current Password"
         remember_me: "Remember me"
   users:
     sessions:
@@ -242,6 +250,13 @@ en:
     registrations:
       new:
         sign_up: "Register akaun"
+      edit:
+        title: "Account Settings"
+        edit: "Edit User"
+        update: "Update"
+        cancel_account: "Cancel my account"
+        need_current_password: "we need your current password to confirm your changes"
+        leave_blank: "leave blank if you don't want to change it"
     passwords:
       new:
         forgot: "Forgot your password?"

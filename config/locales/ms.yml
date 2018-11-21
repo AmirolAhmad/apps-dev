@@ -2,6 +2,12 @@ ms:
   errors_prohibited_this_record_from_being_saved:
     one: "Terdapat 1 kesalahan berlaku didalam borang ini daripada disimpan"
     other: "Terdapat %{count} kesalahan berlaku didalam borang ini daripada disimpan"
+  admin:
+    header:
+      sign_out: "Daftar keluar"
+      settings: "Tetapan Akaun"
+    sidebar:
+      dashboard: "Hadapan"
   application:
     header:
       about: "Mengenai"
@@ -232,8 +238,10 @@ ms:
       user:
         login: "Nama pengguna/alamat emel"
         username: "Nama pengguna"
+        email: "Alamat emel"
         password: "Kata Laluan"
         password_confirmation: "Konformasi kata laluan"
+        current_password: "Kata Laluan Semasa"
         remember_me: "Ingat saya"
   users:
     sessions:
@@ -242,6 +250,13 @@ ms:
     registrations:
       new:
         sign_up: "Daftar akaun"
+      edit:
+        title: "Tetapan Akaun"
+        edit: "Sunting Pengguna"
+        update: "Kemaskini"
+        cancel_account: "Batalkan akaun saya"
+        need_current_password: "kami memerlukan kata laluan semasa anda untuk mengesahkan perubahan"
+        leave_blank: "biarkan kosong jika anda tidak mahu mengubahnya"
     passwords:
       new:
         forgot: "Lupa kata laluan?"
