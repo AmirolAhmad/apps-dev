@@ -1,0 +1,15 @@
+@import '~bootstrap/scss/bootstrap';
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '../src/stylesheets/admin/vendor/animate/animate';
+@import '../src/stylesheets/admin/vendor/magnific-popup/magnific-popup';
+@import '../src/stylesheets/admin/vendor/bootstrap-datepicker/bootstrap-datepicker3';
+@import '../src/stylesheets/admin/vendor/jquery-ui/jquery-ui';
+@import '../src/stylesheets/admin/vendor/jquery-ui/jquery-ui.theme';
+@import '../src/stylesheets/admin/vendor/bootstrap-multiselect/bootstrap-multiselect';
+@import '../src/stylesheets/admin/vendor/morris/morris';
+// specific scss add here
+@import '../src/stylesheets/admin/theme';
+@import '../src/stylesheets/admin/default';
+@import '../src/stylesheets/admin/custom';

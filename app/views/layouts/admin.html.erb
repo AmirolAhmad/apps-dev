@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed header-dark">
+  <head>
+    <title>AppsRdev</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'admin_stylesheets' %>
+    <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'admin_javascripts' %>
+  </head>
+
+  <body>
+    <section class="body">
+      <%= render 'admin/header' %>
+      <div class="inner-wrapper">
+        <%= render 'admin/sidebar' %>
+        <section role="main" class="content-body">
+          <%= yield %>
+        </section>
+      </div>
+    </section>
+    <%= javascript_pack_tag 'admin_vendor_javascripts' %>
+  </body>
+</html>
