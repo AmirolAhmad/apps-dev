@@ -10,11 +10,11 @@ en:
       dashboard: "Dashboard"
   application:
     header:
-      about: "About"
-      contact: "Contact"
-      sign_in: "Sign in"
-      sign_up: "Sign up"
+      welcome: "Welcome to our website! Send us an e-mail to:"
+      sign_in: "Login"
+      sign_up: "Register"
       sign_out: "Sign out"
+      or: "or"
     footer:
       copyright: "Rubiest Development. All right reserved"
   pages:
@@ -249,7 +249,7 @@ en:
         log_in: "Login"
     registrations:
       new:
-        sign_up: "Register akaun"
+        sign_up: "Register"
       edit:
         title: "Account Settings"
         edit: "Edit User"

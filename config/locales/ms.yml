@@ -10,11 +10,11 @@ ms:
       dashboard: "Hadapan"
   application:
     header:
-      about: "Mengenai"
-      contact: "Hubungi"
+      welcome: "Selamat datang ke laman kami. Hantarkan emel anda ke:"
       sign_in: "Daftar masuk"
       sign_up: "Daftar akaun"
       sign_out: "Daftar keluar"
+      or: "atau"
     footer:
       copyright: "Rubiest Development. Hak cipta terpelihara"
   pages:

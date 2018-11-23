@@ -3,10 +3,10 @@
         <div class="container p0">
             <div class="navbar-header">
                 <div class="logo">
-                    <a href="https://thx-html.fruitfulcode.com" class="navbar-brand">
-                        <img src="https://thx-html.fruitfulcode.com/wp-content/themes/thx-html/assets/images/logo.png" alt="Homepage logo">
-                        <span>thx</span>
-                    </a>
+                    <%= link_to root_url,class: "navbar-brand" do %>
+                        <%= image_tag("https://thx-html.fruitfulcode.com/wp-content/themes/thx-html/assets/images/logo.png") %>
+                        <span>KLDX</span>
+                    <% end %>
                 </div>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#navbar-menu">
