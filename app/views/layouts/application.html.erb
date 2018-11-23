@@ -11,14 +11,25 @@
     <%= stylesheet_pack_tag 'stylesheets' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'javascripts' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
   </head>
 
   <body>
-    <%= render 'alert' %>
-    <%= render 'header' %>
-    <main role="main">
+    <div class="page">
+      <%= render 'header' %>
+      <%= render 'menu_bar' %>
+      <%= render 'slider' %>
+      <%= render 'contact' %>
+      <%= render 'images' %>
+      <%= render 'events' %>
+      <%= render 'number' %>
+      <%= render 'statistic' %>
+      <%= render 'be_part' %>
+      <%= render 'volunteer' %>
+      <%= render 'emcomm' %>
       <%= yield %>
-    </main>
-    <%= render 'footer' %>
+      <%= render 'footer' %>
+    </div>
   </body>
 </html>
